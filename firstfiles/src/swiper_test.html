@@ -1,0 +1,63 @@
+<code class="language-html"><!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- *******设置样式********** -->
+    <style type="text/css">
+      .show_div{
+        width: 400px;
+        height: 400px;
+        margin:  0 auto;
+        border: 2px solid black;
+        overflow: hidden;
+      }
+      .scroll_div{
+        width: 2000px;
+        height: 400px;
+      }
+
+      .scroll_div img{
+        width: 400px;
+        height: 400px;
+        float: left;
+      }
+    </style>
+    <!-- end -->
+  </head>
+  <body>
+  <div class="show_div">
+    <div class="scroll_div">
+      <img src="img/1.jpg" alt="">
+      <img src="img/2.jpg" alt="">
+      <img src="img/3.jpg" alt="">
+      <img src="img/4.jpg" alt="">
+      <img src="img/5.jpg" alt="">
+    </div>
+  </div>
+  </body>
+  <!-- *********js代码******** -->
+  <script type="text/javascript">
+    var scrollDiv = document.getElementsByClassName("scroll_div")[0];
+    // 定义初始值
+    var left =0;
+    // 定义一个定时器 走一步
+    function move(){
+      var timer = setInterval(function(){
+        left --;
+        if (left <= -160) {
+          left = 0;
+        }
+        if (left % -40 == 0) {
+          clearInterval(timer);
+          timer = null;
+        }
+        scrollDiv.style.marginLeft = left*10 + "px";
+      },5);
+    }
+    // 定义一个定时器 每隔固定时间 走一张
+    setInterval(function(){
+      move();
+    },3000);
+  </script>
+  </html></code>

@@ -1,0 +1,14 @@
+.container1{
+  width: 250px;
+  height: 70px;
+  background-color:aqua;
+  margin-left:50px ;
+
+}
+.container1.text{
+  font-size: 30px;
+  background-color: aqua;
+}
+.test{
+  color: aqua;
+}

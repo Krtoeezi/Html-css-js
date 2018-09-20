@@ -1,40 +1,42 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <!--设置移动端的比例，宽、高度为设备宽度，初始比例为1，最大比例为1，不允许用户缩放-->
+  <meta name="viewport"
+        content="
+               width=device-width,
+               height=device-height,
+               initial-scale=1.0,
+               maximum-scale=1.0,
+               user-scalable=no"
+  />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="/css/main.css" rel="stylesheet" type="text/css" />
+  <title>携程旅行-酒店预订,机票预订查询,旅游度假,商旅管理-携程无线官网</title>
 </head>
-
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<div class="box" id="box">
+  <div class="inner">
+    <!--轮播图-->
+    <ul>
+      <!--<li><a href="你要跳转的代码" ><img src="产品图片地址" alt+"无法显示时的文字"></a></li>-->
+      <li><a href="#"><img src="img/1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/3.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/4.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/5.jpg" alt=""></a></li>
+    </ul>
+    <ol class="bar">
+      小按钮数量无法确定，由js动态生成
+    </ol>
+    <!--左右焦点-->
+    <div id="arr">
+      <span id="left"> <</span>
+      <span id="right">></span>
+    </div>
+  </div>
+</div>
 </body>
-
+<script> src = "/js/main.js"</script>
 </html>
