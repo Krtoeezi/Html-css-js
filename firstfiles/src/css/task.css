@@ -53,7 +53,7 @@ body{
   /*设置居中*/
   margin-left: auto;
   margin-right: auto;
-  margin-top: 36px;
+  margin-top: 45px;
   /*为父元素开启相对定位*/
   position: relative;
   /*隐藏溢出的内容*/
@@ -108,7 +108,7 @@ body{
   width: 540px;
   position: fixed;
   top: 46px;
-  left: 252px;
+  left: 450px;
 }
 .search-head{
   position: fixed;
@@ -163,7 +163,90 @@ body{
   list-style-type: none;
   background-color: white;
 }
-
-
-
-
+.navbar{
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 4px 445px;
+  display: flex;
+  padding: 8px 0;
+  width: 530px;
+}
+.navbar li{
+  list-style-type: none;
+}
+.navitem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+  color: #222222;
+  height: 50px;
+  width: 106px;
+}
+.navbar li [class^=nav-]{
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-image: url("http://pic.c-ctrip.com/platform/h5/home/un_ico_localnav_v7.12@2x.png");
+  background-repeat: no-repeat;
+  background-size: 32px auto;
+}
+.nav-play-icon{
+  background-position: 0 0px;
+}
+.nav-view-icon{
+  background-position: 0 -32px;
+}
+.nav-eat-icon{
+  background-position: 0 -64px;
+}
+.nav-travel-icon{
+  background-position: 0 -96px;
+}
+.nav-local-icon{
+  background-position: 0 -128px;
+}
+.big-nav{
+  width: 530px;
+  height: 273px;
+  margin:  2px 445px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.big-nav-array{
+  margin-bottom: 3px;
+  display: flex;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.25);
+}
+.big-nav-items{
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  text-align: center;
+  background-size: 121px auto;
+  background: no-repeat center bottom;
+  color: #ffffff;
+  border-left: 1px solid #f2f2f2;
+}
+.big-nav-littleitems{
+  padding: 11px 0;
+  flex-direction: column;
+  display: flex;
+  color: #fff;
+  justify-content: flex-start;
+  border-bottom: 1px solid transparent;
+  border-color: #f2f2f2;
+}
+#hotel{
+  background-image: url(//pic.c-ctrip.com/platform/h5/home/grid-nav-items-hotel.png);
+  background-size:121px auto;
+}
+#airplane{
+  background-image: url(http://pic.c-ctrip.com/platform/h5/home/grid-nav-items-flight.png);
+  background-size:121px auto;
+}
+#visit{
+  background-image: url(http://pic.c-ctrip.com/platform/h5/home/grid-nav-items-travel.png);
+  background-size:121px auto;
+}
